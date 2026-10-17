@@ -11,6 +11,9 @@ class Vector:
     def magnitude(self) -> float:
         return math.hypot(self.x, self.y)
 
+    def unit_vector(self) -> "Vector":
+        return (1/self.magnitude()) * self
+
     def __add__(self, other: "Vector") -> "Vector":
         return Vector(self.x + other.x, self.y + other.y)
 

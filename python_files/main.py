@@ -19,7 +19,7 @@ clock = pygame.time.Clock()
 
 #INITIAL INSTANCES
 airpotCoords = []                                                           # airport coords on map
-worldMap = pygame.image.load("images/map.png")                        # world map image 
+worldMap = pygame.image.load("../images/map.png")                        # world map image 
 worldMap = pygame.transform.scale(worldMap, (1920, 1080))
 # Main game loop
 running = True
@@ -39,7 +39,7 @@ while running:
     # 3. Drawing/Rendering code
     screen.fill((0, 255, 0))  # Fill background with a dark gray color (R, G, B)
     screen.blit(worldMap, (0,0))
-    
+
     # Draw a simple test circle in the center
     pygame.draw.circle(screen, (0, 191, 255), (SCREEN_WIDTH // 2, SCREEN_HEIGHT // 2), 50)
 
