@@ -16,13 +16,25 @@ pygame.display.set_caption("Airplane Simulation")
 # Set up a clock to regulate frame rate
 clock = pygame.time.Clock()
 
+
+#INTIAL VARIABLES
+airpotCoords = []
+
 # Main game loop
 running = True
 while running:
-    # 1. Handle events (inputs, window closing, etc.)
+
+    # Gets mouse coords and sets them to x and y variables
+    mouse_x, mouse_y = pygame.mouse.get_pos()
+
+    # all inbuilt events in pygame (quit, key pressed)
     for event in pygame.event.get():
         if event.type == pygame.QUIT:
             running = False
+        if event.type == pygame.MOUSEBUTTONDOWN:
+            print("")
+
+
 
     # 2. Game logic/updates go here
 
