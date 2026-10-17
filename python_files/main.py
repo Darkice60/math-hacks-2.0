@@ -27,7 +27,7 @@ while running:
     # 2. Game logic/updates go here
 
     # 3. Drawing/Rendering code
-    screen.fill((40, 44, 52))  # Fill background with a dark gray color (R, G, B)
+    screen.fill((0, 255, 0))  # Fill background with a dark gray color (R, G, B)
     
     # Draw a simple test circle in the center
     pygame.draw.circle(screen, (0, 191, 255), (SCREEN_WIDTH // 2, SCREEN_HEIGHT // 2), 50)
