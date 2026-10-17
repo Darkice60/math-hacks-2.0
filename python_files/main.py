@@ -19,7 +19,7 @@ clock = pygame.time.Clock()
 
 #INITIAL INSTANCES
 airpotCoords = []                                                           # airport coords on map
-worldMap = pygame.image.load("../images/map.png")                        # world map image 
+worldMap = pygame.image.load("images/map.png")                        # world map image 
 worldMap = pygame.transform.scale(worldMap, (1920, 1080))
 # Main game loop
 running = True
