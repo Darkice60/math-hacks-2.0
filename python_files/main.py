@@ -8,8 +8,8 @@ import sys
 pygame.init()
 
 # Set up the disply window (Width, Height)
-SCREEN_WIDTH = 640
-SCREEN_HEIGHT = 480
+SCREEN_WIDTH = 1920
+SCREEN_HEIGHT = 1080
 screen = pygame.display.set_mode((SCREEN_WIDTH, SCREEN_HEIGHT))
 pygame.display.set_caption("Airplane Simulation")
 
@@ -17,9 +17,10 @@ pygame.display.set_caption("Airplane Simulation")
 clock = pygame.time.Clock()
 
 
-#INTIAL VARIABLES
-airpotCoords = []
-
+#INITIAL INSTANCES
+airpotCoords = []                                                           # airport coords on map
+worldMap = pygame.image.load("images/world map.jpg")                        # world map image 
+worldMap = pygame.transform.scale(worldMap, (1920, 1080))
 # Main game loop
 running = True
 while running:
@@ -36,7 +37,7 @@ while running:
 
 
 
-    # 2. Game logic/updates go here
+    screen.blit(worldMap, (0,0))
 
     # 3. Drawing/Rendering code
     screen.fill((0, 255, 0))  # Fill background with a dark gray color (R, G, B)
