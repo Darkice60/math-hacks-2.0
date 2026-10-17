@@ -19,4 +19,6 @@ class Vector:
 
     def __mul__(self, scalar: float) -> "Vector":
         return Vector(self.x * scalar, self.y * scalar)
-    
+
+    def __rmul__(self, scalar: float) -> "Vector":
+        return self * scalar
