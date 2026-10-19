@@ -558,7 +558,7 @@ def draw_map_view():
                      is_start=(airport_name == START_AIRPORT))
 
     draw_panel(screen, pygame.Rect(18, 18, 470, 168), (12, 19, 27, 235))
-    draw_text(screen, "MATHHACKS 2.0", 34, 29, TITLE_FONT, WHITE)
+    draw_text(screen, "AeroNav - MATHHACKS 2.0", 34, 29, TITLE_FONT, WHITE)
     draw_text(screen, "AIRPORT SELECTOR  /  GRID MAP", 34, 62, SMALL_FONT, CYAN)
     draw_text(screen, "FROM: Northport (NPT)", 34, 88, SMALL_FONT, WHITE)
     if destination_name is None:
